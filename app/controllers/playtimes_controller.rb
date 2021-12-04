@@ -1,0 +1,2 @@
+class PlaytimesController < ApplicationController
+end

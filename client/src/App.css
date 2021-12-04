@@ -2,6 +2,60 @@
   text-align: center;
 }
 
+
+.Header {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #355070;
+  color: white;
+}
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  background-color: #eaac8b;
+  color: #355070;
+}
+
+.MainDisplay {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  margin: 10px auto;
+  padding-left: 10px;
+  justify-content: center 
+
+}
+
+.GameCards {
+  display: flex;
+  flex-direction: column;
+  font-family:"Roboto", sans-serif;
+  width: 200px;
+  margin: 15px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  color: black;
+  
+}
+
+
+
+
+
+
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
