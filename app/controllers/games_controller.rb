@@ -13,4 +13,13 @@ class GamesController < ApplicationController
         end
     end
 
+    def create
+    end
+
+    private
+
+    def game_params
+        params.permit(:title, :image, :developer, :publisher, :desc, :tags)
+    end
+
 end

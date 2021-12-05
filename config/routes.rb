@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :playtimes
   #resources :reviews
   #resources :playlists
-  resources :games, only: [:index, :show]
+  resources :games, only: [:index, :show, :create]
   resources :users, only: [:index, :show, :create]
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!

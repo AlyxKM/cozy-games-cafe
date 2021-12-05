@@ -4,13 +4,20 @@ import {useEffect, useState} from 'react';
 import Header from './Header';
 import NavBar from './NavBar';
 import MainDisplay from './MainDisplay';
-// import GameDetail from './GameDetail';
+import GameDetails from './GameDetails';
+import {Route, Routes} from 'react-router-dom';
+import AddGame from "./AddGame";
 
 function App() {
 
   const [gameList, setGameList] = useState([])
   const [fullGameList, setFullGameList] = useState([])
   const [currentUser, setCurrentUser] = useState({})
+  const [selectedGame, setSelectedGame] = useState([])
+
+  const addNewGame = (newGameObj) => {
+    setGameList((prevArray) => [...prevArray, newGameObj])
+  }
 
   useEffect(() => {
     fetch("http://localhost:3000/games")
@@ -26,8 +33,12 @@ function App() {
     <div className="App">
       <Header setCurrentUser={setCurrentUser} currentUser={currentUser} setGameList={setGameList} fullGameList={fullGameList}/>
       <NavBar setGameList={setGameList} fullGameList={fullGameList}/>
-      {/* {selectedGame ? <GameDetail game={selectedGames} handleLikes={handleLikes}/> : null} */}
-      <MainDisplay gameList={gameList}/>
+      <Routes>
+        <Route path="/games" element={selectedGame ? <GameDetails game={selectedGame}/> : null} />
+        <Route path="/" element={<MainDisplay gameList={gameList} setSelectedGame={setSelectedGame}/>} />
+        <Route path="/games/new" element={<AddGame addNewGame={addNewGame} />} />
+      </Routes>
+     
      
     </div>
   );
