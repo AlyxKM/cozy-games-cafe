@@ -10,7 +10,7 @@ function UserLoggedIn({currentUser, setLoggedIn}) {
 
     return (
         <div className="UserLoggedIn">
-            <h3>Welcome, {currentUser.username}!</h3>
+            <h3>Welcome, lolxee!</h3>
             <button class="btn btn-secondary" onClick={logOut}>Log Out</button>
 
         </div>

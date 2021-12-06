@@ -4,9 +4,9 @@ import Login from './Login'
 import {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 
-function Header({setCurrentUser, currentUser, setGameList, fullGameList}) {
+function Header({setCurrentUser, currentUser, setGameList, fullGameList, setLoggedIn, loggedIn}) {
 
-    const [loggedIn, setLoggedIn] = useState(false)
+    
 
     useEffect(() => {
        fetch('/me')

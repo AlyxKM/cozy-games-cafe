@@ -5,6 +5,7 @@ class UsersController < ApplicationController
     end
 
     def show
+        current_user = User.first
         if current_user
         render json: current_user, status: :ok
         else

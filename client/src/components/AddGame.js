@@ -8,6 +8,7 @@ function AddGame({addNewGame}) {
     const [publisher, setPublisher] =useState ("")
     const [desc, setDesc] =useState("")
     const [tags, setTags] =useState("")
+    const [rating, setRating] =useState(0)
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,7 +18,8 @@ function AddGame({addNewGame}) {
         developer : developer,
         publisher : publisher,
         desc : desc,
-        tags : tags
+        tags : tags,
+        rating: rating
     }
 
     fetch('http://localhost:3000/games', {
@@ -25,7 +27,7 @@ function AddGame({addNewGame}) {
         method: "POST",
         body: JSON.stringify(newGame)
     })
-        .then(r=>r.json())
+        .then(res =>res.json())
         .then(newGame => {
             addNewGame(newGame)
             setTitle("")
@@ -34,6 +36,7 @@ function AddGame({addNewGame}) {
             setPublisher("")
             setDesc("")
             setTags("")
+            setRating(0)
         })
     }
 

@@ -4,7 +4,7 @@ import {useState} from 'react'
 function Login({setLoggedIn, setCurrentUser}) {
     
     const [input , setInput] = useState({
-        user_name: "",
+        username: "",
         password: "",
         })
 
