@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 function Login({setLoggedIn, setCurrentUser}) {
     
@@ -46,9 +47,9 @@ function Login({setLoggedIn, setCurrentUser}) {
                 onChange={formFill}/>
             <button type='submit' class="btn btn-primary">Sign In</button>
             </form>
-             {/* <Link exact to="/SignUP"> */}
+             <Link to="/signup">
             <button class="btn btn-primary">Sign Up</button>
-            {/* </Link> */}
+            </Link>
 
         </div>
     )

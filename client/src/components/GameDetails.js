@@ -39,7 +39,7 @@ function GameDetails({game}){
             <br></br>
             <p>{game.developer}</p>
             <p>{game.publisher}</p>
-            <button className="LikesButton" onClick={handleLikes}>Likes: {game.rating}</button>
+            <button className="LikesButton" onClick={handleLikes}>Add a Like</button>
             <button className="PlaylistButton" onClick={handlePlaylist}>Add to Playlist</button>
             <p>{game.desc}</p>
             
