@@ -34,13 +34,13 @@ function GameDetails({game}){
 
     return(
         <div className="Details">
-            <h2>{game.name}</h2>
-            <img src={imageUrl} style={{width:"300px"}} alt= {game.title}/>
+            <h3>{game.name}</h3>
+            <img src={imageUrl} style={{width:"700px"}} alt= {game.title}/>
             <br></br>
-            <p>{game.developer}</p>
-            <p>{game.publisher}</p>
-            <button className="LikesButton" onClick={handleLikes}>Add a Like</button>
-            <button className="PlaylistButton" onClick={handlePlaylist}>Add to Playlist</button>
+            <h5>{game.developer}</h5>
+            <h5>{game.publisher}</h5>
+            <button className="btn btn-primary Detail-btn" onClick={handleLikes}>Add a Like</button>
+            <button className="btn btn-primary Detail-btn" onClick={handlePlaylist}>Add to Playlist</button>
             <p>{game.desc}</p>
             
         

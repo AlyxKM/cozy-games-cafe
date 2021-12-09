@@ -9,6 +9,7 @@ import {Route, Routes} from 'react-router-dom';
 import AddGame from "./AddGame";
 import Playlist from './Playlist';
 import SignUp from './SignUp';
+import NoPlaylist from './NoPlaylist';
 
 function App() {
 
@@ -50,7 +51,7 @@ function App() {
         <Route path="/games" element={selectedGame ? <GameDetails game={selectedGame}/> : null} />
         <Route path="/" element={<MainDisplay gameList={gameList} setSelectedGame={setSelectedGame}/>} />
         <Route path="/games/new" element={<AddGame addNewGame={addNewGame} />} />
-        <Route path="/playlist" element= {loggedIn === true ? <Playlist playlist={playlist}/> : null}/>
+        <Route path="/playlist" element= {loggedIn === true ? <Playlist playlist={playlist}/> : <NoPlaylist />}/>
         <Route path="/signup" element={<SignUp />} />
       </Routes>
      

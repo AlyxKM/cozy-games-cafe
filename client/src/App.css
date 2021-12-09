@@ -13,6 +13,11 @@
   color: white;
 }
 
+.Header-title {
+  text-decoration: none;
+  color: white;
+}
+
 .NavBar {
   display: flex;
   align-items: center;
@@ -21,8 +26,12 @@
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;
-  background-color: #eaac8b;
+  background-color: #ffb5a7;
   color: #355070;
+}
+.Nav-item {
+  text-decoration: none;
+  color: white;
 }
 
 .MainDisplay {
@@ -35,17 +44,26 @@
 
 }
 
-.GameCards {
+.Gamebox {
   display: flex;
   flex-direction: column;
   font-family:"Roboto", sans-serif;
-  width: 200px;
+  width: 250px;
+  height: 350px;
   margin: 15px;
   padding: 25px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   color: black;
   
+}
+
+.Card-txt {
+  margin-top: 10px;
+}
+
+.likes-pad {
+  margin-top: 5px;
 }
 
 .Details {
@@ -57,23 +75,53 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
 }
+.Detail-btn {
+  margin: 10px;
+}
 
 a{
   text-decoration:none;
   color: black;
 }
 
+.Playlist {
+  padding-top: 25px;
+}
+
 .playlistCards {
   display: flex;
   flex-direction: column;
   font-family:"Roboto", sans-serif;
-  width: 200px;
+  width: 250px;
+  height: 350px;
   margin: 15px;
   padding: 25px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   color: black;
   
+}
+
+.AddGame {
+  margin: auto;
+  padding-top: 25px;
+}
+
+.AddGame-btn {
+  padding-top: 25px;
+}
+
+.AddGame-input {
+  padding-top: 10px;
+}
+
+.NoPlaylist {
+  padding-top: 25px;
+}
+
+.Login-btn {
+  margin: 5px;
+  justify-content: left;
 }
 
 

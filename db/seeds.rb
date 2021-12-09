@@ -2,7 +2,7 @@ Game.destroy_all
 User.destroy_all
 
 Game.create( title: "Aka", developer: "Namra Games", publisher: "Namra Games", desc: "Find inner peace in a small, open-world game. On these carefully handcrafted islands, you can take a nap on a giant monster, feed baby dragons, take care of the fauna and flora ...but demons from your past might come back to remind you what you want to forget.", rating: 4, tags: "Open-World Exploration Adventure RPG", image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1591450/capsule_616x353.jpg?t=1637145089", image2: "https://cdn.cloudflare.steamstatic.com/steam/apps/1591450/ss_d29ea5b64069f24f6ee97495ebd1df39cae483ca.1920x1080.jpg?t=1637145089")
-Game.create( title: "Animal Crossing: New Horizons", developer: "Nintendo", publisher: "Nintendo", desc: "Nook Inc. invites you to create your personal island paradise on a deserted island brimming with possibility.
+Game.create( title: "New Horizons", developer: "Nintendo", publisher: "Nintendo", desc: "Nook Inc. invites you to create your personal island paradise on a deserted island brimming with possibility.
 
 Live life at your own pace as you garden, fish, decorate, hunt for bugs and fossils, get to know the animal residents, and more. The time of day and seasons match real life, so something is happening on your island whether you’re there or not.", rating: 25, tags: "Simulation Adventure", image: "https://i.ytimg.com/vi/n-McRVucI9Q/maxresdefault.jpg", image2: "https://miro.medium.com/max/1838/1*eWBjauLGMEIdCkZJLBwQKA.jpeg")
 Game.create( title: "Astroneer", developer: "System Era Softworks", publisher: "System Era Softworks" , desc: "A game of aerospace industry and interplanetary exploration.

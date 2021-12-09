@@ -45,11 +45,11 @@ function Login({setLoggedIn, setCurrentUser}) {
                 name='password'
                 placeholder='Input Password'
                 onChange={formFill}/>
-            <button type='submit' class="btn btn-primary">Sign In</button>
+            <button type='submit' class="btn btn-primary Login-btn">Sign In</button>
             </form>
-             <Link to="/signup">
-            <button class="btn btn-primary">Sign Up</button>
-            </Link>
+             {/* <Link to="/signup">
+            <button class="btn btn-primary Login-btn">Sign Up</button>
+            </Link> */}
 
         </div>
     )

@@ -43,14 +43,28 @@ function AddGame({addNewGame}) {
     return (
         <div className="AddGame">
             <h3>Want To Add A New Game?</h3>
-         <form onSubmit={handleSubmit}>
-            <input value= {title} onChange={(e) => setTitle(e.target.value)}type="text" name="title" placeholder="Game Title" />
-            <input value= {image} onChange={(e) => setImage(e.target.value)}type="text" name="image" placeholder="Image URL" />
-            <input value= {developer} onChange={(e) => setDeveloper(e.target.value)}type="text" name="developer" placeholder="Developer" />
-            <input value= {publisher} onChange={(e) => setPublisher(e.target.value)}type="text" name="publisher" placeholder="Publisher" />
-            <input value= {desc} onChange={(e) => setDesc(e.target.value)} type="text" name="desctiption" placeholder="Game Description" />
-            <input value= {tags} onChange={(e) => setTags(e.target.value)} type="text" name="tags" placeholder="Any Tags" />
-            <button type="submit">Submit Game</button>
+         <form className="col-auto" onSubmit={handleSubmit}>
+             <div className="col-auto">
+            <input className="col-sm-4 col-form-label" value= {title} onChange={(e) => setTitle(e.target.value)}type="text" name="title" placeholder="Game Title" />
+            </div>
+            <div className="col-auto AddGame-input">
+            <input className="col-sm-4 col-form-label" value= {image} onChange={(e) => setImage(e.target.value)}type="text" name="image" placeholder="Image URL" />
+            </div>
+            <div className="col-auto AddGame-input">
+            <input className="col-sm-4 col-form-label" value= {developer} onChange={(e) => setDeveloper(e.target.value)}type="text" name="developer" placeholder="Developer" />
+            </div>
+            <div className="col-auto AddGame-input">
+            <input className="col-sm-4 col-form-label"value= {publisher} onChange={(e) => setPublisher(e.target.value)}type="text" name="publisher" placeholder="Publisher" />
+            </div>
+            <div className="col-auto AddGame-input">
+            <input className="col-sm-4 col-form-label" value= {desc} onChange={(e) => setDesc(e.target.value)} type="text" name="desctiption" placeholder="Game Description" />
+            </div>
+            <div className="col-auto AddGame-input">
+            <input className="col-sm-4 col-form-label" value= {tags} onChange={(e) => setTags(e.target.value)} type="text" name="tags" placeholder="Any Tags" />
+            </div>
+            <div className="AddGame-btn">
+            <button className="btn btn-primary" type="submit">Submit Game</button>
+            </div>
         </form>
 
         </div>

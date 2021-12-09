@@ -19,12 +19,15 @@ function Header({setCurrentUser, currentUser, setGameList, fullGameList, setLogg
     }, [])
 
     return(
-        <div class="Header">
+    
+        <div className="Header">
             <Link to="/">
-            <h2>Cozy Games Cafe</h2>
+            <h2 className="Header-title">Cozy Games Cafe</h2>
             </Link>
+      
         {loggedIn === false ? <Login setLoggedIn={setLoggedIn} setCurrentUser={setCurrentUser}/> : <UserLoggedIn currentUser={currentUser} setLoggedIn={setLoggedIn}/>}
         </div>
+            
     )
 }
 

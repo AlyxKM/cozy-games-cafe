@@ -4,16 +4,16 @@ import {Link} from "react-router-dom";
 function GameCards({game, setSelectedGame}) {
     
     return (
-        <div class="GameCards" onClick={() => setSelectedGame(game)}>
-            <Link to="/games">
-            <img src={game.image} alt={game.title} width= "200px" height= "115px" />
-            
+        <Link to="/games">
+        <div className="Gamebox" onClick={() => setSelectedGame(game)}>
+            <img src={game.image} alt={game.title} width= "200px" height= "115px" />  
+            <div className="Card-txt">   
             <h3>{game.title}</h3>
-            <p>{game.developer}</p>
-            <p className="likes">Likes: {game.rating}</p>
-            </Link>
-            
+            <p className="text-muted">{game.developer}</p> 
+            <p className="text-muted">Likes: {game.rating}</p>  
+            </div>
         </div>
+        </Link>
     )
 }
 

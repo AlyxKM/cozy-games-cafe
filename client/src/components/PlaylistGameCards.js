@@ -2,15 +2,17 @@ import {Link} from 'react-router-dom'
 
 function PlaylistGameCards({games}) {
     return (
+
         <div className="playlistCards" key={games.id}>
-            <Link to="/games">
+
             <img src={games.image} alt={games.title} width= "200px" height= "115px" />
-            
+            <div className="Card-txt">
             <h3>{games.title}</h3>
-            <p>{games.developer}</p>
-            <p className="likes">Likes: {games.rating}</p>
-            </Link>
+            <p className="text-muted">{games.developer}</p>
+            <p className="text-muted">Likes: {games.rating}</p>
+            </div>
         </div>
+
     )
 }
 
