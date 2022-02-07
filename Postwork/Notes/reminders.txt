@@ -1,0 +1,5 @@
+If server is having trouble starting, saying ActiveRecord no connection, start postgres in CLI:
+
+sudo service postgresql start
+
+Remeber cors gem, bundle install, "star" in config-initializer-cors
