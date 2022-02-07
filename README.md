@@ -12,6 +12,12 @@ Users can look into games they've never played and get some insight on them, bef
 
 ![Detail Firewatch](https://github.com/xmeadows/cozy-games-cafe/blob/93ebdc0f997dd8182b709415f350977cc331e4d8/images/detail%20screen%202%20cgc.png)
 
+Future Updates!!
+- Messaging and friend system between users
+- Leave reviews on games added to your Playlist
+- Add playtimes to reviews
+- And more...
+
 ## Requirements
 
 - Ruby 2.7.4
